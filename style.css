@@ -1,0 +1,82 @@
+/* 1. Thiết lập chung để xóa khoảng cách thừa của trình duyệt */
+* {
+    margin: 0; /* Xóa bỏ khoảng cách mặc định */
+    padding: 0; /* Xóa bỏ khoảng cách mặc định */
+    box-sizing: border-box; /* Giúp tính toán kích thước phần tử dễ dàng hơn */
+}
+
+/* 2. Trang trí khung chứa Menu (thẻ ul) */
+.navbar ul {
+    list-style-type: none; /* Xóa bỏ hoàn toàn dấu chấm tròn */
+    background-color: #1e3a8a; /* Màu nền xanh nhạt cho thanh menu */
+    display: flex;         /* Sử dụng flexbox để sắp xếp các mục menu */
+    flex-wrap: wrap;       /* Tự động xuống dòng nếu màn hình quá hẹp */
+    justify-content: center; /* Căn giữa toàn bộ menu */
+    padding: 10px 0; /* Khoảng cách trên dưới của menu */
+}
+
+/* 3. Khoảng cách giữa các mục menu */
+.navbar li {
+    margin: 5px 15px;
+}
+
+/* 4. Trang trí các liên kết (thẻ a) */
+.navbar li a {
+    text-decoration: none; /* Xóa gạch chân mặc định */
+    color: white;        /* Màu trắng cho liên kết */
+    font-size: 16px;
+    transition: 0.4s;      /* Hiệu ứng đổi màu mượt mà */
+}
+
+/* 5. Hiệu ứng khi di chuột qua */
+.navbar li a:hover {/* Khi rê chuột vào liên kết */
+    color: rgb(209, 205, 205);        /* Đổi sang màu trắng khi rê chuột vào */
+    text-decoration: underline;/* Gạch chân khi rê chuột vào */
+}
+
+/* 6. Đảm bảo phần nội dung bên dưới không bị dính vào menu */
+section {
+    margin-top: 30px;/* Khoảng cách trên của phần nội dung */
+    text-align: center;/* Căn giữa nội dung */
+    margin-bottom: 50px;
+}
+
+/* 7. Trang trí phần header */
+.header {
+    background-image: url('/ImagesofWeb/NCPheader.png'); /* Hình nền cho header */
+    background-size: cover; /* Đảm bảo hình nền phủ đầy header */
+    background-position: center; /* Căn giữa hình nền */
+    min-height: 450px;
+}
+
+.section {
+    text-align: center; /* Căn giữa nội dung */
+    margin: 20px; /* Khoảng cách xung quanh phần nội dung */
+    font-size: 18px;
+}
+
+.footer {
+    background-color:#1e3a8a; /* Màu nền xanh nhạt cho footer */
+    padding: 10px; /* Khoảng cách bên trong footer */
+    margin-top: 40px 0; /* Khoảng cách trên của footer */
+    text-align: center; /* Căn giữa nội dung footer */
+    width: 100%;
+    color: white;
+}
+
+.active {
+    background-color: rgb(220, 152, 24);
+}
+
+.book-description {
+    width: 800px;
+    text-align: left;
+    margin: 0 auto; /* Căn giữa đoạn văn */
+}
+
+.BookImagesAndText {
+    display: flex;/* Sử dụng flexbox */
+    flex-direction: column;/* Sắp xếp theo cột dọc */
+    align-items: center;/* Căn giữa các mục */
+    gap: 30px; /* Khoảng cách giữa các mục */
+}
