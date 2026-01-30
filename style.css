@@ -101,5 +101,5 @@
     background-color: rgb(9, 9, 177);
     border-radius: 20px;/* Bo tròn các góc */
     width: 0; /* Bắt đầu với chiều rộng 0 */
-    transition: width 10s ease-in-out; /* Hiệu ứng chuyển đổi mượt mà */
+    transition: width 2s ease-in-out; /* Hiệu ứng chuyển đổi mượt mà */
 }
